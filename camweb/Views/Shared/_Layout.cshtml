@@ -10,6 +10,12 @@
 </head>
 <a asp-controller="Home" asp-action="Intro">Intro Page</a>
 <body>
+    <div class="container">
+        @RenderBody()
+        <div class="section addition">
+            @RenderSection("section addition", required: false)
+            </div>
+    </div>    
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
